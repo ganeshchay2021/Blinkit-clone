@@ -1,4 +1,3 @@
-
 import 'package:blinkitclone/repository/widgets/ui_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -76,6 +75,8 @@ class CommonBanner extends StatelessWidget {
               ),
               TextField(
                 decoration: InputDecoration(
+                  fillColor: Colors.white,
+                  filled: true,
                   hintText: "Search \"Ice-Cream\"",
                   prefixIcon: const Icon(
                     Icons.search,
