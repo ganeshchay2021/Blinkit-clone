@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class UiHelper {
-  static customImage({required String image}) {
-    return Image.asset("assets/images/$image");
+  static customImage({required String image, double? height, double? width, BoxFit? boxFit}) {
+    return Image.asset(
+      "assets/images/$image",
+      height: height,
+      width: width,
+      fit: boxFit,
+    );
   }
 
   static customText(
@@ -22,4 +27,6 @@ class UiHelper {
       ),
     );
   }
+
+  
 }

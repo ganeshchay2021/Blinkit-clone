@@ -23,11 +23,32 @@ class Data {
     {"image": "image 35.png", "text": "Beauty &\nCosmetics"},
   ];
 
-    static var householdEssentials = [
+  static var householdEssentials = [
     {"image": "image 36.png", "text": "Chips &\nNamkeens"},
     {"image": "image 37.png", "text": "Sweets &\nChocalates"},
     {"image": "image 38.png", "text": "Drinks &\nJuices"},
     {"image": "image 39.png", "text": "Sauces &\nSpreads"},
     {"image": "image 40.png", "text": "Beauty &\nCosmetics"},
+  ];
+
+  static var bestsellers = [
+    {
+      "image": "image 444.png",
+      "text": "Amul Taaza Toned&\nFresh Milk",
+      "time": " 16 MINS",
+      "Price": " 27"
+    },
+    {
+      "image": "image 455.png",
+      "text": "Potato (Aloo)",
+      "time": " 16 MINS",
+      "Price": " 37"
+    },
+    {
+      "image": "image 46.png",
+      "text": "Hybrid Tomato",
+      "time": " 16 MINS",
+      "Price": " 37"
+    },
   ];
 }
