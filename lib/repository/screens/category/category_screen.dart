@@ -149,7 +149,7 @@ class CategoryScreen extends StatelessWidget {
                     height: 120,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemCount: Data.groceryKitchen.length,
+                      itemCount: Data.snacksDrinks.length,
                       itemBuilder: (context, index) {
                         return Column(
                           children: [
@@ -211,7 +211,7 @@ class CategoryScreen extends StatelessWidget {
                     height: 120,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemCount: Data.groceryKitchen.length,
+                      itemCount: Data.householdEssentials.length,
                       itemBuilder: (context, index) {
                         return Column(
                           children: [

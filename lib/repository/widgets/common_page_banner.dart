@@ -1,12 +1,21 @@
-import 'package:blinkitclone/repository/widgets/ui_helper.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:blinkitclone/repository/widgets/ui_helper.dart';
+
 class CommonBanner extends StatelessWidget {
   final Color color;
+  final Color? textCOlor;
+  final Color? iconColor;
+  final Color? iconBgColor;
+
   const CommonBanner({
     super.key,
     required this.color,
+    this.textCOlor,
+    this.iconColor,
+    this.iconBgColor,
   });
 
   @override
@@ -26,7 +35,7 @@ class CommonBanner extends StatelessWidget {
               ),
               UiHelper.customText(
                   text: "Blinkit in",
-                  color: Colors.black,
+                  color: textCOlor ?? Colors.black,
                   fontWeight: FontWeight.w700,
                   fontSize: 14),
               Row(
@@ -37,19 +46,19 @@ class CommonBanner extends StatelessWidget {
                     children: [
                       UiHelper.customText(
                           text: "16 minutes",
-                          color: Colors.black,
+                          color: textCOlor ?? Colors.black,
                           fontWeight: FontWeight.w700,
                           fontSize: 20),
                       Row(
                         children: [
                           UiHelper.customText(
                               text: "HOME - ",
-                              color: Colors.black,
+                              color: textCOlor ?? Colors.black,
                               fontWeight: FontWeight.w700,
                               fontSize: 12),
                           UiHelper.customText(
                               text: "Sujal Dave, Ratanada, Jodhpur (Raj) ",
-                              color: Colors.black,
+                              color: textCOlor ?? Colors.black,
                               fontWeight: FontWeight.normal,
                               fontSize: 12,
                               fontfamily: "Regular"),
@@ -64,9 +73,12 @@ class CommonBanner extends StatelessWidget {
                   Container(
                     height: 35,
                     width: 35,
-                    child: UiHelper.customImage(image: "user 1.png"),
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.white),
+                    child: UiHelper.customImage(
+                        image: "user 1.png", color: iconColor),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: iconBgColor ?? Colors.white,
+                    ),
                   )
                 ],
               ),

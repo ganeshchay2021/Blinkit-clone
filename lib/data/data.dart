@@ -51,4 +51,31 @@ class Data {
       "Price": " 37"
     },
   ];
+  static var dewaliSale = [
+    {"image": "image 50.png", "text": "Lights, Diyas &\nCandles Chips"},
+    {"image": "image 51.png", "text": "Diwali&\nGifts"},
+    {"image": "image 52.png", "text": "Appliances\n& Gadgets"},
+    {"image": "image 53.png", "text": "Home\n& Living"},
+  ];
+
+  static var homeDewaliSale = [
+    {
+      "image": "image 54.png",
+      "text": "Golden Glass &\nWooden Lid Candle (Oudh)",
+      "time": " 16 MINS",
+      "Price": " 79"
+    },
+    {
+      "image": "image 57.png",
+      "text": "Royal Gulab Jamun&\nBy Bikano",
+      "time": " 16 MINS",
+      "Price": " 79"
+    },
+    {
+      "image": "image 63.png",
+      "text": "Bikaji Bhujia",
+      "time": " 16 MINS",
+      "Price": " 79"
+    },
+  ];
 }
